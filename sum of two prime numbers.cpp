@@ -1,12 +1,12 @@
 #include<iostream>
 using namespace std;
-bool checkprime(int a)
+bool checkprime(int r)
 {
 int i;
 bool isprime=true;
-for(i=2;i<=a/2;i++)
+for(i=2;i<=r/2;i++)
 {
-if(a%i==0)
+if(r%i==0)
 {
 isprime=false;
 break;
@@ -14,25 +14,25 @@ break;
 }
 return isprime;
 }
-bool checkprime(int a)
+bool checkprime(int r)
 int main()
 {
-int a,i;
+int r,i;
 bool flag=false;
 cout<<"enter the number:";
-cin>>a;
-for(i=2;i<=a/2;i++)
+cin>>r;
+for(i=2;i<=r/2;i++)
 {
 if(checkprime(i))
 {
-if(chcekprime(a-i))
+if(chcekprime(r-i))
 {
-cout<<a<<"="<<i<<"+"<<n-i<<endl;
+cout<<r<<"="<<i<<"+"<<r-i<<endl;
 flag=true;
 }
 }
 }
 if(!flag)
-cout<<a<<"not to sum";
+cout<<r<<"not to sum";
 return 0;
 }
